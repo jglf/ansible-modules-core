@@ -116,10 +116,10 @@ EXAMPLES = '''
 # Example from Ansible Playbooks
 - unarchive: src=foo.tgz dest=/var/lib/foo
 
-# Unarchive a file that is already on the remote machine
+# Unarchive a file that is already on the remote machine. Note: remote_src was added in 2.2, deprecating copy.
 - unarchive: src=/tmp/foo.zip dest=/usr/local/bin remote_src=yes
 
-# Unarchive a file that needs to be downloaded (added in 2.0)
+# Unarchive a file that needs to be downloaded (added in 2.0) Note: remote_src was added in 2.2, deprecating copy.
 - unarchive: src=https://example.com/example.zip dest=/usr/local/bin remote_src=yes
 '''
 
